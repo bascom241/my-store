@@ -1,8 +1,11 @@
 import React from 'react'
-import Cotent from './Content/Cotent'
+
+
 const App = () => {
   return (
-  <Cotent/>
+    <h1>
+         Hello world
+    </h1>
   )
 }
 

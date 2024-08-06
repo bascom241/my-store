@@ -1,0 +1,117 @@
+.cart-container{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    
+}
+
+.cart-item-container{
+    width: 100%;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+  
+}
+.cart-item-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.cart-item-controls{
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  
+
+}
+.cart-item-controls button{
+    background-color: white;
+    border: none;
+}
+
+
+.cart-item{
+    display: flex;
+   gap: 36px;
+   align-items: center;
+   
+}
+
+.cart-items{
+    margin-top: 2rem;
+    
+}
+
+
+.payment {
+    width: 300px; /* Adjust the width as needed */
+    position: fixed;
+    right: 5rem;
+    top:8rem;
+    background-color: red;
+    border: 1px solid red;
+    padding: 20px;
+    color: white;
+    height: 70%;
+    width: 500px;
+  }
+  .delete-product{
+    background-color: rgb(134, 8, 8);
+    color:white ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width:768px) {
+    .cart-item-container{
+        width: 100%;
+        gap: 1rem;
+        margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        overflow-y: auto; /* Enable vertical scrolling */
+      
+    }
+    .cart-item{
+        display: flex;
+        flex-direction: column;
+       gap: 36px;
+       align-items: center;
+       
+    }
+    .delete-product{
+        background-color: rgb(134, 8, 8);
+        color:white ;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 60px;
+        width: 70%;
+      }
+      .cart-item-price{
+        margin-left: 180px;
+      }
+      .cart-container{
+     
+        margin-left: 1rem;
+        
+    }
+    .cart-item-container img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+  }

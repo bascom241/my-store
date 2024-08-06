@@ -1,0 +1,152 @@
+.nav_container {
+    width: 100vw;
+    height: 5rem;
+    background-color: var(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+
+    z-index: 1;
+
+}
+
+.nav_container h2 {
+    margin-left: 4rem;
+
+}
+
+.nav_container a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_container ul {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+}
+
+.navList_container2 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+
+.link1,
+.link2,
+.link3 {
+    color: black;
+    text-decoration: none;
+}
+
+.link3 {
+    position: relative;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.count {
+
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+    font-size: 0.5rem;
+    background-color: green;
+    padding: 3px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+
+.nav-open {
+    display: none;
+  
+}
+
+.nav-close {
+    display: none;
+  
+   
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .nav_container {
+        position: fixed;
+
+    }
+
+    /* .navList_Container,.navList_container2{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+ 
+    }
+    .navList_container2{
+        
+        top: 13rem;
+    } */
+    .div_container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(13, 10, 55);
+        width: 100%;
+        height: 100vh;
+        padding-top: 2rem;
+        align-items: flex-end;
+        transition: right 0.8s;
+
+    }
+
+    .div_container li {
+        display: flex;
+    }
+
+    .div_container a {
+        color: white;
+    }
+
+    .link3 {
+        position: absolute;
+        left: 2rem;
+       
+    }
+
+    .nav-open {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .nav-close {
+        display: block;
+      
+        font-size: 1.5rem;
+        color: white;
+        
+    }
+
+    /* .navList_container2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ 
+   } */
+
+
+}
