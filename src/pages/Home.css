@@ -4,12 +4,15 @@
     border-radius: 15px;
   object-fit: fill;
 
+
     
 }
 
 .imageContainer{
   margin-top: 5rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .container{
     margin: 0px 80px;
@@ -32,6 +35,7 @@
     background-color: inherit;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+  
 }
 .category_lists li:hover{
     background-color: black;
@@ -62,6 +66,7 @@
     box-shadow:0 4px 8px rgba(0, 0, 0, 0);
 }
 .product_box > div {
+  width: 100%;
     position: relative;
     padding: 20px;
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
@@ -138,13 +143,25 @@ cursor: pointer;
   }
 
 
-  @media screen and (max-width:800px) {
+
+  @media screen and (width<400px) {
     .imageContainer img{
-      max-width: 400px; /* Set your desired max width */
-      max-height: 500px; /* Set your desired max height */
-      width: auto; /* Adjust width while maintaining aspect ratio */
+      width: 100%;
       height: auto;
       margin: 0 auto;
+  }
+  }
+
+
+  @media screen and (max-width:800px) {
+    .product_lists  h2{
+      margin-top: 3rem;
+      margin-bottom: 0rem;
+      
+  }
+    
+    .imageContainer img{
+      width: 100%;
   }
   .category_lists{
     display: flex;
@@ -152,7 +169,12 @@ cursor: pointer;
   }
   .div1 {
    padding: 0.5rem;
-   margin: 0.5rem 0;
+  
+   
+  }
+  .div1 li{
+    width: 235px;
+   
   }
   .div1 li:nth-child(5){
     display: none;
@@ -162,7 +184,7 @@ cursor: pointer;
     
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    
     
 }
 
@@ -173,12 +195,17 @@ cursor: pointer;
  }
  .content h2{
   margin-top: 20px;
-  margin-left: 30px;
+
   white-space: nowrap;
  }
- .content p{
-  margin-left: 30px;
- }
+ .product_lists  h2::after{
+  content: '';
+  position: absolute;
+  left: 50px;
+  bottom: -10px;
+  width: 15%;
+ 
+}
  .product_box{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -196,5 +223,26 @@ cursor: pointer;
 }
 .container{
   margin: 0px 10px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h2{
+  font-size: 1.3rem;
+}
+.content h2 p{
+  font-size: 0.8rem;
+}
+.content p{
+  margin: 0rem 0.5rem;
+}
+.top-product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
   }

@@ -53,7 +53,7 @@ const CartPage = () => {
                             <div className='cart-item-price'>
                                 <p>{product.price}</p>
                             </div>
-                            <div>
+                            <div className='cart-item-price'>
                                 <button className='delete-product' onClick={()=> deleteCart(product.id)}>Delete product</button>
                             </div>
                           

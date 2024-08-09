@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import heroSection from '../images/heroImage3.jpeg'
-import { productLists } from '../data'
+import { productLists } from '../data';
 import { FaPlus } from 'react-icons/fa'
 import { ShopContext } from '../context/shop-context';
 import { FaMinus } from 'react-icons/fa';
@@ -59,7 +59,7 @@ const [lists,setLists] = useState(productLists);
 
 
 
-        <h2>Our Top Products</h2>
+        <h2 className='top-product'>Our Top Products</h2>
 
 
 

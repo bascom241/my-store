@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContext, useState,useRef } from 'react';
 import { FaCartPlus } from 'react-icons/fa'
-import { productLists } from '../../data';
+
 import { ShopContext } from '../../context/shop-context';
 import  {FaBars} from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
